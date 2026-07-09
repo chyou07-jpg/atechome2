@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="(주)에이텍 - ATM, 전자가격표, 무인주문기, 교통카드 단말기를 만드는 대한민국 전자제품 제조사" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>(주)에이텍</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <img src="src/assets/logo.png.jpg" alt="ATEC 에이텍" class="logo__img" />
+        </a>
+        <nav class="nav" aria-label="주요 메뉴">
+          <a href="#about">회사 소개</a>
+          <a href="#services">사업 영역</a>
+          <a href="#history">연혁</a>
+          <a href="#contact">문의</a>
+        </nav>
+        <button type="button" class="menu-btn" id="menuToggle" aria-label="메뉴">
+          <span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileNav">
+        <a href="#about">회사 소개</a>
+        <a href="#services">사업 영역</a>
+        <a href="#history">연혁</a>
+        <a href="#mobility">에이텍모빌리티</a>
+        <a href="#contact">문의</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="hero">
+        <div class="hero__media">
+          <div class="hero__bg" id="heroBg" aria-hidden="true"></div>
+          <div class="hero__overlay" aria-hidden="true"></div>
+          <div class="hero__gradient" aria-hidden="true"></div>
+          <canvas class="hero__particles" id="heroParticles" aria-hidden="true"></canvas>
+        </div>
+        <div class="wrap hero__content" id="heroContent">
+          <p class="hero__tag hero-animate" style="--delay: 0.1s">1993년 설립 · 코스닥 상장</p>
+          <h1 class="hero__title hero-animate" style="--delay: 0.3s">
+            일상 곳곳을 연결하는<br />
+            <em>전자제품</em>을 만듭니다
+          </h1>
+          <p class="hero__text hero-animate" style="--delay: 0.55s">
+            ATM부터 교통카드 단말기까지.<br />
+            에이텍은 30년 넘게 대한민국 전자제품 시장을 함께해 왔어요.
+          </p>
+          <a href="#about" class="btn hero-animate" style="--delay: 0.8s">에이텍 알아보기</a>
+        </div>
+      </section>
+
+      <!-- ATM Feature -->
+      <section class="feature" id="services">
+        <div class="wrap feature__grid reveal">
+          <div class="feature__text">
+            <p class="feature__hash"># ATM</p>
+            <h2 class="feature__title">국내 2위,<br />함께 시장을 이끌어요</h2>
+            <p class="feature__desc">
+              효성그룹과 함께 국내 ATM 시장을 선도하고 있어요.
+              2017년 LG CNS ATM 사업부 인수 이후, 끊임없이 성장하고 있습니다.
+            </p>
+          </div>
+          <div class="feature__visual feature__visual--atm">
+            <div class="mock-card">
+              <span class="mock-card__label">ATM 시장 점유율</span>
+              <strong>2위</strong>
+              <p>효성그룹과 국내 시장 선도</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Retail Feature -->
+      <section class="feature feature--alt">
+        <div class="wrap feature__grid feature__grid--reverse reveal">
+          <div class="feature__text">
+            <p class="feature__hash"># 유통</p>
+            <h2 class="feature__title">마트의 가격표부터<br />주문기까지</h2>
+            <p class="feature__desc">
+              전자 가격표(ESL)와 무인 주문기를 제조해요.
+              유통·외식 업계의 디지털 전환을 에이텍이 돕습니다.
+            </p>
+          </div>
+          <div class="feature__visual feature__visual--retail">
+            <div class="mock-card mock-card--light">
+              <span class="mock-card__label">주요 제품</span>
+              <strong>ESL · 키오스크</strong>
+              <p>전자가격표 · 무인주문기</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mobility Feature -->
+      <section class="feature" id="mobility">
+        <div class="wrap feature__grid reveal">
+          <div class="feature__text">
+            <p class="feature__hash"># 모빌리티</p>
+            <h2 class="feature__title">교통의 모든 순간,<br />에이텍모빌리티</h2>
+            <p class="feature__desc">
+              자회사 에이텍모빌리티가 버스·지하철·택시의 핵심 장비를 만들어요.
+              교통카드 단말기부터 개집표기까지, 이동을 더 편리하게.
+            </p>
+            <a href="#contact" class="text-link">사업 문의하기 →</a>
+          </div>
+          <div class="feature__visual feature__visual--mobility">
+            <ul class="tag-list">
+              <li>교통카드 단말기</li>
+              <li>택시 미터기</li>
+              <li>개집표기</li>
+              <li>승차권 발매기</li>
+              <li>충전기 · 정산기</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="wrap reveal">
+          <p class="section-hash"># 회사 소개</p>
+          <h2 class="section-title">대한민국 전자제품 제조사,<br />에이텍이에요</h2>
+          <p class="section-text">
+            1993년 (주)에이텍시스템으로 시작해, 지금은 ATM·유통·교통 분야에서
+            국내 시장을 선도하는 전자제품 제조사가 되었어요.
+          </p>
+          <div class="stat-row">
+            <div class="stat-box reveal-item">
+              <strong>1993</strong>
+              <span>설립</span>
+            </div>
+            <div class="stat-box reveal-item">
+              <strong>2001</strong>
+              <span>코스닥 상장</span>
+            </div>
+            <div class="stat-box stat-box--accent reveal-item">
+              <strong>2위</strong>
+              <span>ATM 시장</span>
+            </div>
+            <div class="stat-box reveal-item">
+              <strong>30+</strong>
+              <span>년의 역사</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners -->
+      <section class="partners">
+        <div class="wrap">
+          <p class="partners__label">함께하는 파트너</p>
+          <div class="partners__row">
+            <span>효성그룹</span>
+            <span>LG CNS</span>
+            <span>한국스마트카드</span>
+            <span>티머니</span>
+            <span>에이텍모빌리티</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Business cards -->
+      <section class="biz">
+        <div class="wrap reveal">
+          <p class="section-hash"># 사업 영역</p>
+          <h2 class="section-title">에이텍이 만드는 것들</h2>
+          <div class="biz-grid">
+            <article class="biz-card reveal-item">
+              <span class="biz-card__emoji">🏧</span>
+              <h3>ATM</h3>
+              <p>국내 ATM 시장 점유율 2위</p>
+            </article>
+            <article class="biz-card reveal-item">
+              <span class="biz-card__emoji">🏷️</span>
+              <h3>전자 가격표</h3>
+              <p>마트 ESL 솔루션</p>
+            </article>
+            <article class="biz-card reveal-item">
+              <span class="biz-card__emoji">📱</span>
+              <h3>무인 주문기</h3>
+              <p>유통·외식 키오스크</p>
+            </article>
+            <article class="biz-card reveal-item">
+              <span class="biz-card__emoji">💳</span>
+              <h3>교통카드 단말기</h3>
+              <p>버스·지하철 결제</p>
+            </article>
+            <article class="biz-card reveal-item">
+              <span class="biz-card__emoji">🚕</span>
+              <h3>택시 미터기</h3>
+              <p>에이텍모빌리티 제조</p>
+            </article>
+            <article class="biz-card reveal-item">
+              <span class="biz-card__emoji">🚇</span>
+              <h3>교통·역무 장비</h3>
+              <p>개집표기·발매기</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- History -->
+      <section class="history" id="history">
+        <div class="wrap reveal">
+          <p class="section-hash"># 연혁</p>
+          <h2 class="section-title">에이텍의 발자취</h2>
+          <div class="history-list">
+            <div class="history-row reveal-item">
+              <time>2023</time>
+              <div>
+                <h3>에이텍모빌리티로 사명 변경</h3>
+                <p>자회사 (주)에이텍티앤 → (주)에이텍모빌리티</p>
+              </div>
+            </div>
+            <div class="history-row reveal-item">
+              <time>2017</time>
+              <div>
+                <h3>ATM 사업 시작</h3>
+                <p>LG CNS ATM 사업부 인수</p>
+              </div>
+            </div>
+            <div class="history-row reveal-item">
+              <time>2015</time>
+              <div>
+                <h3>에이텍티앤 분사</h3>
+                <p>교통카드 단말기 제작 부서 분사</p>
+              </div>
+            </div>
+            <div class="history-row reveal-item">
+              <time>2007</time>
+              <div>
+                <h3>교통카드 사업 진출</h3>
+                <p>한국스마트카드 지분 인수, 티머니 단말기 납품</p>
+              </div>
+            </div>
+            <div class="history-row reveal-item">
+              <time>2004</time>
+              <div>
+                <h3>사명 변경</h3>
+                <p>(주)에이텍으로 변경</p>
+              </div>
+            </div>
+            <div class="history-row reveal-item">
+              <time>2001</time>
+              <div>
+                <h3>코스닥 상장</h3>
+                <p>2001년 5월 24일</p>
+              </div>
+            </div>
+            <div class="history-row reveal-item">
+              <time>1993</time>
+              <div>
+                <h3>(주)에이텍시스템 설립</h3>
+                <p>1993년 6월 30일</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="wrap reveal">
+          <p class="section-hash"># 문의</p>
+          <h2 class="section-title">궁금한 점이 있으신가요?</h2>
+          <p class="section-text">사업 및 제품 관련 문의를 남겨주시면 담당자가 연락드릴게요.</p>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-info__item">
+                <span>이메일</span>
+                <p>contact@atec.co.kr</p>
+              </div>
+              <div class="contact-info__item">
+                <span>전화</span>
+                <p>02-1234-5678</p>
+              </div>
+              <div class="contact-info__item">
+                <span>주소</span>
+                <p>서울특별시 강남구 테헤란로 123</p>
+              </div>
+            </div>
+
+            <div class="contact-form-box">
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <div class="field">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" required placeholder="홍길동" />
+                  </div>
+                  <div class="field">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" required placeholder="hello@company.com" />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="company">회사명</label>
+                  <input type="text" id="company" placeholder="선택 입력" />
+                </div>
+                <div class="field">
+                  <label for="message">문의 내용</label>
+                  <textarea id="message" rows="4" required placeholder="문의 내용을 입력해 주세요"></textarea>
+                </div>
+                <button type="submit" class="btn btn--full">문의 보내기</button>
+              </form>
+              <div id="contactSuccess" class="contact-done" hidden>
+                <p class="contact-done__icon">✓</p>
+                <h3>문의가 접수되었어요!</h3>
+                <p>빠른 시일 내에 연락드릴게요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div class="footer__top">
+          <img src="src/assets/logo.png.jpg" alt="ATEC" class="logo__img logo__img--footer" />
+          <div class="footer__links">
+            <div>
+              <h4>회사</h4>
+              <a href="#about">회사 소개</a>
+              <a href="#history">연혁</a>
+              <a href="#services">사업 영역</a>
+            </div>
+            <div>
+              <h4>문의</h4>
+              <a href="#contact">사업 문의</a>
+              <a href="#">고객센터</a>
+              <a href="#">FAQ</a>
+            </div>
+            <div>
+              <h4>정책</h4>
+              <a href="#">개인정보처리방침</a>
+              <a href="#">이용약관</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p><strong>(주)에이텍</strong> · ATM, 전자가격표, 무인주문기, 교통카드 단말기 제조</p>
+          <p class="footer__copy">© ATEC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
